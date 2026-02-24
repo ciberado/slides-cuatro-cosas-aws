@@ -1,0 +1,16 @@
+{
+    "content": [
+        "README.md"
+    ],
+    "styles": ["local.css"],
+    "resolution" : "1920x1080",
+    "liveReload" : true,
+    "slideWhiteBoards" : false,
+    "preprocessors" : [
+        "headerPreprocessor"
+    ],
+    "processors": [
+    ],
+    "scripts": [
+    ]
+}
