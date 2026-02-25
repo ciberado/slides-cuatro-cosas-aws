@@ -87,6 +87,7 @@ There will be dragons🐉
 
 * 🧬🧬 **Fast cloning** with copy-on-write snapshots for dev and reporting 
 * ⌯⌲ **Local write forwarding** on replicas eliminates dual endpoints with 20ms latency
+* 💸💱 **Aurora I/O-Optimized** for stop worrying about IOPS
 
 ::: Notes
 
@@ -102,7 +103,9 @@ There will be dragons🐉
     * Isolation/Lock considerations
     * 20ms latency
     * Joke about "Too much? well, if you go n+1 with hibernate..."
-
+* Aurora I/O-Optimized
+    * Increases instance+storage cost and elliminates IOPS
+    * Useful when IOPS > 25% of the bill 
 :::
 
 ## Compute
@@ -132,6 +135,31 @@ There will be dragons🐉
 ## Traffic
 
 ![Based on Aerial Photography Of Cars On The Road, by Arnie Chou, https://www.pexels.com/photo/aerial-photography-of-cars-on-the-road-1877271/](images/traffic.png)
+
+[](#alb,.illustration.partial)
+
+![ALB icon](images/Application-Load-Balancer.svg)
+
+* OIDC-compliant authentication
+* Least_outstanding_requests connections
+* Health thresholds
+
+::: Notes
+
+* Authentication
+    * Works with Entra ID, Cognito, etc
+    * Signs a JWT with ALB's key 
+    * Contains groups in claim
+* Least oustanding
+    * Will help nodes that accumlate longer requests
+    * Nodes can run an agent for managing weights
+* Health thresholds
+    * Percentage of healthy instances
+    * Integrates with R53
+    * Automatic failover on R53
+
+
+:::
 
 
 [](#cloudfront,.illustration.partial)
