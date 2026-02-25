@@ -34,7 +34,7 @@ what the heck is AWS Service Management Connector.
 
 [](.illustration.partial)
 
-### Superb Service Storage (S3)
+### Superb Storage Service (S3)
 
 ![S3 icon](images/amazon-s3-simple-storage-service.svg)
 
@@ -55,20 +55,19 @@ Talk about spending the afternoon watching curling games on the Olympics.
     - **S3 Metadata** provides live inventory table updated each hour, plus journal with events. All searcheable.
 * Faster: do the **parallel upload demo** and talk about multipart
 * Higher: from 5TB to **50TB**. Still, rewrite it all for changing one byte
-* Stronger: **strong consistency** on all regions allows things like S3 Mount
+* Stronger: **strong consistency** on all regions allows things like S3 Mount Point. **Demo**!
 * Together: **Amazon S3 Multi-Region Access Points** (MRAPs) provide a single global endpoint to route S3 requests across replicated buckets in multiple AWS Regions
 
 :::*
 
-[](.illustration)
+[](.illustration.partial)
 
 ### DynamoDB + SQL
 
 ![DynamoDB icon](images/amazon-dynamodb.svg)
 
-PartiQL is a SQL-compatible query language for querying and analyzing semi-structured data across AWS services like DynamoDB, S3, and Redshift.
-
-There will be dragons🐉
+* PartiQL is a SQL-compatible query language for querying and analyzing semi-structured data across AWS services like DynamoDB, S3, and Redshift.
+* There will be dragons🐉
 
 ::: Notes
 
@@ -118,6 +117,7 @@ There will be dragons🐉
 
 ![ASG icon](images/amazon-asg.svg)
 
+* 💤 License management
 * 🐦‍🔥 Maximum Instance Lifetime
 * ✨ Capacity rebalancing
 * 🌡️ Warm Pool
@@ -125,6 +125,7 @@ There will be dragons🐉
 
 ::: Notes
 
+* Lic management: very impotant in highly elastic
 * Max lifetime: includes availability budgets.
 * Capacity rebalancing: replaces spot in risk of being reclaimed
 * Warm pool: super cool for windows.
@@ -136,13 +137,15 @@ There will be dragons🐉
 
 ![Based on Aerial Photography Of Cars On The Road, by Arnie Chou, https://www.pexels.com/photo/aerial-photography-of-cars-on-the-road-1877271/](images/traffic.png)
 
-[](#alb,.illustration.partial)
+[](#alb,.illustration.contain.partial)
+
+### App Load Balancer
 
 ![ALB icon](images/Application-Load-Balancer.svg)
 
-* OIDC-compliant authentication
-* Least_outstanding_requests connections
-* Health thresholds
+* 🔐 OIDC-compliant authentication
+* 🫩 Least_outstanding_requests connections
+* 🩺 Health thresholds
 
 ::: Notes
 
@@ -168,6 +171,7 @@ There will be dragons🐉
 
 ![Cloudfront icon](images/amazon-cloudfront.svg)
 
+* 💲Fixed price plans
 * 🔵🟢Staging distributions
 * 🏗️ Continous deployment
 

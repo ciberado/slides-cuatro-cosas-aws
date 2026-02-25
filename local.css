@@ -82,6 +82,9 @@ section.illustration {
 		}
 	}
 
+	&.contain .block-image:nth-of-type(1) img {
+		object-fit: contain;
+	}
 }
 
 .hidden-title {
